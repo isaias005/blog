@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm -v' 
+                sh '/usr/local/bin/npm -v' 
             }
         }
     }
