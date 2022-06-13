@@ -3,7 +3,9 @@ pipeline {
         docker {
             image 'node:lts-buster-slim'
             args '-p 3000:3000'
-            ssh 'npm -v'
+            inside {
+                sh 'node -v'
+            }
         }
     }
     stages {
