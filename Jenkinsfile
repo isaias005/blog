@@ -1,8 +1,7 @@
 pipeline {
     agent {
-        docker {
-            image 'node:lts-buster-slim'
-            args '-p 4200:4200'
+        docker.image('node:lts-buster-slim').inside {
+            sh 'npm install'
         }
     }
     stages {
