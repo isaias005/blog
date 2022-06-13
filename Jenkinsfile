@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh '/usr/local/bin/npm -v' 
+                sh 'chown -R $(whoami) /usr/local/bin /usr/local/lib/node_modules'
+                sh 'npm -v' 
             }
         }
     }
