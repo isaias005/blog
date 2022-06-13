@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'chown -R $(whoami) /usr/local/bin /usr/local/lib/node_modules'
+                sh 'chmod -777 /usr/local/bin'
                 sh 'npm -v' 
             }
         }
