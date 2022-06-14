@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'echo "Done"' 
+                sh 'npm -v' 
             }
         }
     }
