@@ -1,14 +1,13 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node'
+        }
+    }
     stages {
         stage('Build') { 
-            agent {
-                docker {
-                    image 'node'
-                }
-            }
             steps {
-                sh 'npm -v' 
+                sh 'su node && npm install' 
             }
         }
     }
