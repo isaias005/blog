@@ -1,6 +1,7 @@
 FROM node
 WORKDIR /usr/src/app
-copy package*.json ./
+COPY package*.json ./
+RUN npm install
 COPY . .
 EXPOSE 4001
-CMD ["npm", "install"]
+CMD ["npm", "run", "build"]
