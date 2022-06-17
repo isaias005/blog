@@ -1,9 +1,6 @@
 #!/usr/bin/env sh
 set -x
-npm run build
-set +x
-set -x
-npm run dev &
+npm start &
 sleep 1
 echo $! > .pidfile
 set +x
