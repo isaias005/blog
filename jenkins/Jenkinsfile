@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:lts'
-            args '--publish 3001:3000'
+            args '-p localhost:3000:3000'
         }
     }
     stages {
