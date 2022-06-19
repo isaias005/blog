@@ -13,7 +13,7 @@ export default function Navbar({ brandText, items }: NavbarProps) {
     <div
       css={{
         display: "flex",
-        padding: "1rem",
+        padding: "1rem 0",
         alignItems: "center",
         justifyContent: "space-between",
       }}

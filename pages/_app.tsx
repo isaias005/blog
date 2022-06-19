@@ -34,7 +34,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         styles={{
           ":root": {
             "--bg-color": "#1D1E20",
-            "--bg-light-color": "#27282B",
+            "--bg-light-color": "#333438",
             "--primary-color": "#F45B69",
             "--secondary-color": "#4087E6",
             "--fg-color": "#FFFFFF",
@@ -52,6 +52,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           a: {
             color: "inherit",
             textDecoration: "none",
+          },
+          "ul, ol": {
+            listStyle: "none",
           },
         }}
       />
