@@ -10,7 +10,7 @@ export default function NavbarBrand({ children }: NavbarBrandProps) {
   return (
     <Link href="/">
       <a>
-        <span css={{ fontSize: "1.5rem" }}>{children}</span>
+        <span css={{ fontSize: "1.8rem" }}>{children}</span>
       </a>
     </Link>
   );

@@ -4,27 +4,25 @@ import Image from "next/image";
 interface ExperienceCardProps {
   image: string;
   title: string;
-  secondaryTitle: string;
   children: string;
 }
 
 export default function ExperienceCard({
   image,
   title,
-  secondaryTitle,
   children,
 }: ExperienceCardProps) {
   return (
     <div
       css={{
-        marginTop: "2rem",
         padding: "2rem",
         display: "flex",
         borderRadius: "5px",
         gap: "2rem",
         alignItems: "center",
-        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px;",
-        backgroundColor: "var(--bg-light-color)",
+        boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+        background:
+          "linear-gradient(130deg, rgba(244,91,105,0.30) 0%, rgba(244,91,105,0.35) 35%, rgba(244,91,105,0.40) 100%)",
       }}
     >
       <Image
@@ -38,30 +36,12 @@ export default function ExperienceCard({
         css={{
           display: "flex",
           flexDirection: "column",
-          gap: "2rem",
-          flexBasis: "40%",
+          gap: "1rem",
+          flexBasis: "80%",
         }}
       >
         <h3>{title}</h3>
-        <p>{children}</p>
-      </div>
-      <div
-        css={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "2rem",
-          flexBasis: "20%",
-          textAlign: "right",
-          marginLeft: "auto",
-        }}
-      >
-        <h3>{secondaryTitle}</h3>
-        <ul>
-          <li>React</li>
-          <li>NestJS</li>
-          <li>SQLServer</li>
-          <li>NextJS</li>
-        </ul>
+        <p css={{ color: "var(--fg-dark-color)" }}>{children}</p>
       </div>
     </div>
   );

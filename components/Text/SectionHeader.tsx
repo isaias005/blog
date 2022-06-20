@@ -9,10 +9,11 @@ export default function SectionHeader({ children }: SectionHeaderProps) {
     <h2
       css={{
         fontWeight: "500",
-        fontSize: "1.5rem",
+        fontSize: "2rem",
         display: "flex",
         alignItems: "center",
         gap: "1rem",
+        marginBottom: "4rem",
         ":after": {
           content: "''",
           top: "25%",

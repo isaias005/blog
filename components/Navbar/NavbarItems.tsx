@@ -28,6 +28,7 @@ export default function NavbarItems({ items }: NavbarItemsProps) {
           <Link href={item.url} key={item.text}>
             <a
               css={{
+                fontSize: "1.1rem",
                 ":hover": {
                   color: "var(--primary-color)",
                   cursor: "pointer",
